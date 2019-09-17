@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Fonemes</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="http://code.jquery.com/jquery-git2.js"></script>
+</head>
+<body>
+
+
+
+<div class="jumbotron text-center">
+  <h1>Fonemes : Poems and Short Stories</h1><br>
+  <h4>A platform to share your favourite literary works or your own compositions</h4>
+</div>
+
+<div class="container">
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <h4>Enter your username to view your posts</h4>
+      <form>
+        <div class="form-group">
+          <label>Username:</label>
+          <input class="form-control" name="username"></input>
+          <br>
+          <button type="button" class="btn btn-default btn-lg" id="posts-submit" onclick="fetchposts()">Submit</button>
+        </div>
+      </form>
+
+      </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row panel panel-default" id="posts-output">
+
+    </div>
+</div>
+
+
+<script src="/js/script.js"></script>
+</body>
+</html>

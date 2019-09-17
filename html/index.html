@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Fonemes</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="http://code.jquery.com/jquery-git2.js"></script>
+</head>
+<body>
+
+
+
+<div class="jumbotron text-center">
+  <h1>Fonemes : Poems and Short Stories</h1><br>
+  <h4>A platform to share your favourite literary works or your own compositions</h4>
+
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class = "col-sm-12 text-center">
+        <p>There is NOT a social media, so NO likes, upvotes, downvotes, comments.<br> Just write your heart out!<br></p>
+      <div><button type="button" class="btn btn-default" onClick="newEntry()">Add A  New Entry</button>
+      <button type="button" class="btn btn-default" onclick="window.location.href='myposts.html'">Search posts by user name</button>
+    </div>
+  </div>
+</div>
+<br>
+
+    <div class="row">
+      <div class="col-sm-12 text-center" id="new-entry">
+        <h4>Please provide a username followed by your entry</h4>
+
+      <form>
+        <div class="form-group">
+          <label>Username:</label>
+          <input class="form-control" name="username"></input>
+
+          <label>Title:</label>
+          <input class="form-control" name="title"></input>
+
+          <label>Poem/Story:</label>
+          <textarea class="form-control" rows="5" name="content"></textarea>
+          <br>
+          <button type="button" class="btn btn-primary btn-lg" onClick="handleForm()">Submit</button>
+          <button type="button" class="btn btn-default btn-lg" onClick="newEntry()">Cancel</button>
+        </div>
+      </form>
+
+      </div>
+    </div>
+
+<br>
+  <div class="row text-center">
+    <h4>Don't feel like writing? Take some time to read what others have posted</h4>
+  </div>
+
+  <div class="row panel panel-default" id="home">
+
+  </div>
+  
+</div>
+<script src="/js/script.js"></script>
+<script src="/js/startup.js"></script>
+</body>
+</html>
